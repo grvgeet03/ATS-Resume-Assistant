@@ -14,7 +14,7 @@ load_dotenv()
 st.set_page_config(page_title='ATS Resume Assistant')
 
 # Configure the GenAI API key
-api_key = os.getenv("GOOGLE_API_KEY")
+api_key = os.getenv("GOOGLE_API_KEY") #This code is modified for deployment. Use this for your device -> api_key = os.getenv("GOOGLE_API_KEY") 
 if not api_key:
     st.error("API key for Google Generative AI is missing.")
 else:
